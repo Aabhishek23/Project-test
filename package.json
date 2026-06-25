@@ -1,0 +1,28 @@
+{
+  "name": "project-test",
+  "version": "1.0.0",
+  "description": "\"# Project-test\"",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aabhishek23/Project-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aabhishek23/Project-test/issues"
+  },
+  "homepage": "https://github.com/Aabhishek23/Project-test#readme",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1"
+  }
+}
