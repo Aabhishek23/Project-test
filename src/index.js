@@ -1,10 +1,14 @@
 import app from './app.js';
 import config from './config/index.js';
+import connectDB from './config/database.js';
 
 /**
  * Start the Express Server
  */
-const startServer = () => {
+const startServer = async () => {
+  // Connect to database
+  await connectDB();
+
   const server = app.listen(config.port, () => {
     console.log(`==========================================`);
     console.log(`  Server is running in ${config.env} mode`);

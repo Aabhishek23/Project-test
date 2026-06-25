@@ -21,8 +21,11 @@
   },
   "homepage": "https://github.com/Aabhishek23/Project-test#readme",
   "dependencies": {
+    "bcryptjs": "^3.0.3",
     "cors": "^2.8.6",
     "dotenv": "^17.4.2",
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "mongoose": "^9.7.2",
+    "zod": "^4.4.3"
   }
 }
