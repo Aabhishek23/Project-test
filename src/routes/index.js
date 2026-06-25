@@ -1,6 +1,10 @@
 import { Router } from 'express';
+import authRoutes from './auth.js';
 
 const router = Router();
+
+// Mount auth routes
+router.use('/auth', authRoutes);
 
 /**
  * @route   GET /api/health
