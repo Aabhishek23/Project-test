@@ -6,7 +6,7 @@ import { errorHandler, notFoundHandler } from './middleware/error.js';
 
 const app = express();
 
-// Configure CORS
+// Configure CORS 
 app.use(cors({
   origin: config.corsOrigin === '*' ? '*' : config.corsOrigin.split(','),
   credentials: true,
