@@ -1,10 +1,14 @@
 import { Router } from 'express';
 import authRoutes from './auth.js';
+import usersRoutes from './users.js';
 
 const router = Router();
 
 // Mount auth routes
 router.use('/auth', authRoutes);
+
+// Mount users routes (admin only)
+router.use('/users', usersRoutes);
 
 /**
  * @route   GET /api/health

@@ -1,6 +1,7 @@
 import app from './app.js';
 import config from './config/index.js';
 import connectDB from './config/database.js';
+import seedAdmin from './config/seedAdmin.js';
 
 /**
  * Start the Express Server
@@ -8,6 +9,9 @@ import connectDB from './config/database.js';
 const startServer = async () => {
   // Connect to database
   await connectDB();
+
+  // Seed default admin user if none exists
+  await seedAdmin();
 
   const server = app.listen(config.port, () => {
     console.log(`==========================================`);
